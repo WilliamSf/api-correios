@@ -2,6 +2,11 @@ Essa lib é apenas um wrapper para algumas APIs disponíveis na internet, ao inv
 
 Atualmente uso as seguintes APIs: http://developers.agenciaideias.com.br/correios/rastreamento/ e http://correiosapi.apphb.com. Pretendo, no futuro, disponibilizar uma própria.  
 
+## Instalação 
+
+Para instalar, apenas rode `composer require mateusjatenee/api-correios` no terminal.
+
+
 ## Exemplos de uso  
 
 ```php
