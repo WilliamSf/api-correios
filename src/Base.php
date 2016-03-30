@@ -6,14 +6,16 @@ use GuzzleHttp\Client;
 
 class Base
 {
-    public function __construct($base_uri)
+    public function __construct()
     {
-        $this->guzzle = new Client(['base_uri' => $base_uri]);
+        $this->guzzle = new Client();
     }
-    public function get($url)
+    public function getRequest($url)
     {
         $req = $this->guzzle->request('GET', $url);
 
-        return $req;
+        $req = json_decode($req->getBody(), true);
+
+        return (object) $req;
     }
 }
