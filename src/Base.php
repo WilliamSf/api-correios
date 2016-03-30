@@ -6,9 +6,9 @@ use GuzzleHttp\Client;
 
 class Base
 {
-    public function __construct()
+    public function __construct($base_uri)
     {
-        $this->guzzle = new Client();
+        $this->guzzle = new Client(['base_uri' => $base_uri]);
     }
     public function get($url)
     {
