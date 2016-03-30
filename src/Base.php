@@ -20,8 +20,8 @@ class Base
     {
         $req = $this->guzzle->request('GET', $url);
 
-        $req = json_decode($req->getBody(), true);
+        $req = json_decode($req->getBody());
 
-        return (object) $req;
+        return $req;
     }
 }
