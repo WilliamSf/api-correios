@@ -1,0 +1,17 @@
+{
+    "name": "mateusjatenee/api-correios",
+    "description": "Wrapper para consulta de encomendas e CEPs",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^5.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mateus Guimarães",
+            "email": "mateus.jatene@gmail.com"
+        }
+    ]
+}
