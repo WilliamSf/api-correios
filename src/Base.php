@@ -10,7 +10,13 @@ class Base
     {
         $this->guzzle = new Client();
     }
-    public function getRequest($url)
+    /**
+     * Retorna os dados do CEP requisitado
+     *
+     * @param string $url
+     * @return stdClass
+     */
+    public function getRequest(string $url)
     {
         $req = $this->guzzle->request('GET', $url);
 
