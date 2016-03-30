@@ -14,6 +14,5 @@ class CEPTest extends PHPUnit_Framework_TestCase
         $this->assertEquals($req->logradouro, 'Crispim de Almeida');
         $this->assertEquals($req->bairro, 'Pedreira');
         $this->assertEquals($req->cidade, 'Belém');
-
     }
 }

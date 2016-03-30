@@ -13,5 +13,10 @@
             "name": "Mateus Guimarães",
             "email": "mateus.jatene@gmail.com"
         }
-    ]
+    ],
+    "autoload": {
+      "psr-4": {
+        "correiosAPI\\": "src/"
+      }
+    }
 }
