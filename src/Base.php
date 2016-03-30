@@ -14,7 +14,7 @@ class Base
      * Retorna o resultado de uma requisição GET
      *
      * @param string $url
-     * @return mixed
+     * @return object
      */
     public function getRequest(string $url)
     {
