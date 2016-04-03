@@ -10,10 +10,12 @@ class Base
     {
         $this->guzzle = new Client();
     }
+
     /**
-     * Retorna o resultado de uma requisição GET
+     * Retorna o resultado de uma requisição GET.
      *
      * @param string $url
+     *
      * @return object
      */
     public function getRequest(string $url)
