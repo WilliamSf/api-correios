@@ -2,8 +2,6 @@
 
 namespace correiosAPI;
 
-use correiosAPI\Base;
-
 class CEP extends Base
 {
     /**
@@ -15,11 +13,13 @@ class CEP extends Base
      * Retorna informações do CEP.
      *
      * @param int $cep
+     *
      * @return stdClass
      */
     public function get(int $cep): \stdClass
     {
-        $req = $this->getRequest($this->url . $cep);
+        $req = $this->getRequest($this->url.$cep);
+
         return $req;
     }
 }

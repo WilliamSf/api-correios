@@ -4,7 +4,6 @@ use correiosAPI\CEP;
 
 class CEPTest extends PHPUnit_Framework_TestCase
 {
-
     public function test_request_returns_a_valid_object()
     {
         $cep = new Cep();
