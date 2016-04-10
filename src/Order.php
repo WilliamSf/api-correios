@@ -14,10 +14,10 @@ class Order extends Base
     /**
      * Retorna array de objetos com informações da encomenda
      *
-     * @param $code
-     * @return array
+     * @param string $code
+     * @return stdClass
      */
-    public function get($code): array
+    public function get(string $code): array
     {
         $req = $this->getRequest($this->url . $code);
         return $req;
