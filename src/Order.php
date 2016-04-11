@@ -18,7 +18,7 @@ class Order extends Base
      */
     public function get(string $code): array
     {
-        $req = $this->getRequest($this->url . $code);
+        $req = $this->getRequest($this->url.$code);
 
         return $req;
     }
