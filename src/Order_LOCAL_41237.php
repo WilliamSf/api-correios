@@ -2,6 +2,8 @@
 
 namespace correiosAPI;
 
+use correiosAPI\Base;
+
 class Order extends Base
 {
     /**
@@ -10,16 +12,14 @@ class Order extends Base
     private $url = 'http://developers.agenciaideias.com.br/correios/rastreamento/json/';
 
     /**
-     * Retorna array de objetos com informações da encomenda.
+     * Retorna array de objetos com informações da encomenda
      *
-     * @param $code
-     *
-     * @return array
+     * @param string $code
+     * @return stdClass
      */
     public function get(string $code): array
     {
         $req = $this->getRequest($this->url . $code);
-
         return $req;
     }
 }
